@@ -1,6 +1,10 @@
 # cocoapods-show-podpsecs-in-project
 
-A description of cocoapods-show-podpsecs-in-project.
+A CocoaPods plugin which shows all project related podpsecs in pods project, including all dependencies. 
+
+No need to lookup podspecs any more.
+
+![](resources/hero.png)
 
 ## Installation
 
@@ -8,4 +12,12 @@ A description of cocoapods-show-podpsecs-in-project.
 
 ## Usage
 
-    $ pod spec project POD_NAME
+    plugin 'cocoapods-show-podpsecs-in-project'
+
+Add this line to `Podfile`, and you are all set 🥳
+
+After a `pod install`, all podspecs should be shown in pods project.
+
+## License
+
+MIT

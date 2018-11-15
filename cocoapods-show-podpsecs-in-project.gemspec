@@ -1,4 +1,3 @@
-# coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'cocoapods-show-podpsecs-in-project/gem_version.rb'
@@ -8,9 +7,9 @@ Gem::Specification.new do |spec|
   spec.version       = CocoapodsShowPodpsecsInProject::VERSION
   spec.authors       = ['X140Yu']
   spec.email         = ['zhaoxinyu1994@gmail.com']
-  spec.description   = %q{A short description of cocoapods-show-podpsecs-in-project.}
-  spec.summary       = %q{A longer description of cocoapods-show-podpsecs-in-project.}
-  spec.homepage      = 'https://github.com/EXAMPLE/cocoapods-show-podpsecs-in-project'
+  spec.description   = %q{A CocoaPods plugin which shows all project related podpsecs in pods project.}
+  spec.summary       = %q{A CocoaPods plugin which shows all project related podpsecs in pods project. No need to lookup podspecs any more.}
+  spec.homepage      = 'https://github.com/x140yu/cocoapods-show-podpsecs-in-project'
   spec.license       = 'MIT'
 
   spec.files         = `git ls-files`.split($/)
