@@ -1,5 +1,7 @@
 # cocoapods-show-podpsecs-in-project
 
+[![Gem Version](https://badge.fury.io/rb/cocoapods-show-podpsecs-in-project.svg)](https://badge.fury.io/rb/cocoapods-show-podpsecs-in-project)
+
 A CocoaPods plugin which shows all project related podpsecs in pods project, including all dependencies. 
 
 No need to lookup podspecs any more.
