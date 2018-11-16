@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    cocoapods-show-podpsecs-in-project (0.1.0)
+    cocoapods-show-podpsecs-in-project (0.1.1)
 
 GEM
   remote: https://rubygems.org/

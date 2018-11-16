@@ -8,6 +8,7 @@ module CocoapodsGitHooks
     FileUtils.mkdir specs_dir_path
 
     context.umbrella_targets[0].specs.each do |spec|
+      spec = spec.parent if spec.subspec?
       path = "#{specs_dir_path}/#{spec.name}.podpsec.json"
       File.open(path, 'w') { |file| file.write(spec.to_pretty_json) }
     end
