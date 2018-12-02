@@ -3,12 +3,12 @@ require 'fileutils'
 
 module CocoapodsGitHooks
   Pod::HooksManager.register('cocoapods-show-podpsecs-in-project', :post_install) do |context|
-    specs_dir_path = File.expand_path('Pods/Podspecs')
+    specs_dir_path = File.expand_path("#{context.sandbox.root}/Podspecs")
     FileUtils.rm_rf specs_dir_path
     FileUtils.mkdir specs_dir_path
 
     context.umbrella_targets[0].specs.each do |spec|
-      spec = spec.parent if spec.subspec?
+      spec = spec.parent while spec.parent
       path = "#{specs_dir_path}/#{spec.name}.podpsec.json"
       File.open(path, 'w') { |file| file.write(spec.to_pretty_json) }
     end
