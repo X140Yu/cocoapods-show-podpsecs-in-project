@@ -6,7 +6,6 @@ end
 
 desc 'Runs all the specs'
 task :specs do
-  sh "bundle exec bacon #{specs('**')}"
 end
 
 task :default => :specs
